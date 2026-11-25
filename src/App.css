@@ -135,3 +135,87 @@ main {
     display: none;
   }
 }
+
+/* ---------- Banner ---------- */
+.banner {
+  background: linear-gradient(135deg, #1f5fd1, #0f1b2d);
+  color: #fff;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.banner-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.banner h1 {
+  font-size: 32px;
+}
+
+.banner p {
+  max-width: 600px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #e07a1f;
+}
+
+.banner-btn:hover {
+  background: #c86916;
+}
+
+/* ---------- CategoryList ---------- */
+.category-section {
+  margin-bottom: 32px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.category-chip {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-chip:hover {
+  border-color: #1f5fd1;
+  color: #1f5fd1;
+}
+
+/* ---------- Trạng thái Hết hàng ---------- */
+.product-image-wrapper {
+  position: relative;
+}
+
+.out-of-stock-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
